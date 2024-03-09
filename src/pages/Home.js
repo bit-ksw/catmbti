@@ -2,8 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import PaneImage from "../assets/a.png";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClickButton = () => {
+    navigate("/question");
+  };
+
   return (
     <Wrapper>
       <Contents>
@@ -19,7 +26,7 @@ const Home = () => {
           />
         </LogoImage>
         <Desc>MBTI를 기반으로 하는 잘맞는 고양이 찾기!!</Desc>
-        <Button>테스트 시작하기</Button>
+        <Button onClick={handleClickButton}>테스트 시작하기</Button>
       </Contents>
     </Wrapper>
   );
