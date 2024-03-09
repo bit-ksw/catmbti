@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Wrapper>
       <Contents>
-        <Header>헤더입니다.</Header>
+        <Header>헤더입니다.111</Header>
         <Title></Title>
         <LogoImage>
           <img
